@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SMS-Generator</string>
+    <string-array name="transaction_types">
+        <item>Purchase</item>
+        <item>Withdrawal</item>
+        <item>Deposit</item>
+        <item>Payment</item>
+        <item>Debit Order</item>
+    </string-array>
 </resources>

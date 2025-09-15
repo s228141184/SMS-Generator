@@ -11,17 +11,23 @@
         android:id="@+id/btnBankMeassage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
         android:onClick="onBankMessage"
         android:text="Financial intitution Message"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="186dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnGeneralMessage"
         android:layout_width="225dp"
         android:layout_height="37dp"
+        android:layout_marginTop="88dp"
         android:onClick="onGeneralMessage"
         android:text="General Message"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="240dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBankMeassage" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Financial Institution"
+            android:hint="Financial Institution:"
             android:inputType="text" />
 
         <EditText
@@ -32,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Account:"
             android:inputType="text" />
 
         <LinearLayout
@@ -43,25 +44,27 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transaction Type: " />
+                android:text="Transaction Type: "
+                android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/transactionType"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:entries="@array/transaction_types" />
 
         </LinearLayout>
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/tfDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Date of Transaction:"
-            android:inputType="date" />
+            android:hint="Date of Transaction (DD/MM/YY):"
+            android:inputType="text" />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/tfDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -73,22 +76,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Amount(R):"
+            android:hint="Amount (R):"
             android:inputType="numberDecimal" />
-
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date" />
 
         <Button
             android:id="@+id/btnBankSend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Send"
-            android:onClick="onSend"/>
+            android:onClick="onSend" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
